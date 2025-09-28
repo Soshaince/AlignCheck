@@ -1,0 +1,15 @@
+transformers
+tokenizers
+sentencepiece
+torchtext
+pandas
+scikit-learn
+protobuf
+bert_score
+pyarrow
+fastparquet
+medcat
+peft
+datasets
+spacy
+stanford-openie
