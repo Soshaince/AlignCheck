@@ -1,10 +1,28 @@
 # AlignCheck
 AlignCheck: a Semantic Open-Domain Metric for Factual Consistency Assessment
 
-
-#### This is anonymized repository for the paper 'AlignCheck: a Semantic Open-Domain Metric for Factual Consistency Assessment' for the purpose of reviewing
-
+ 
 ### Prerequisites
-#### download medcat from here and set the path variable 'medcat_path'
-#### download CoreNLP package for open_ie and set the variable 'CORE_NLP_PATH'
-#### install libraries requirements.txt 
+
+1. **Install required Python libraries:**
+
+```bash
+pip install -r requirements.txt
+```
+
+2. **Download SNOMED-CT model pack**  
+- [MedCAT SNOMED-CT model](https://github.com/CogStack/MedCAT/blob/main/docs/main.md) (requires NIH authentication)  
+- Set `medcat_path` in `main.py`.
+
+3. **Download CoreNLP for OpenIE**  
+- [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/download.html)  
+- Set `CORE_NLP_PATH` in `main.py`.
+
+4. **Format the source and target texts similar to sample_input.json**
+
+
+5. **Run the scoring script:**
+
+```bash
+python main.py
+```
